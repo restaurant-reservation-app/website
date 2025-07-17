@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+:root {
+  --first: #d64541;
+  --second: #8e9775;
+  --third: #3e2723;
+  --background: #f3e9d2;
+  font-family: 'Marcellus', serif;
+  color: var(--third);
+  font-weight: 900;
+}
