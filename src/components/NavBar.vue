@@ -1,10 +1,10 @@
 <template>
   <div class="navBarContainer">
-    <p>Menu</p>
-    <p>Order</p>
-    <img :src="Logo" alt="logo" />
-    <p>Reserve</p>
-    <p>About Us</p>
+    <p><router-link class="link" to="/menu">Menu</router-link></p>
+    <p><router-link class="link" to="/">Order</router-link></p>
+    <router-link to="/"><img :src="Logo" alt="logo" /></router-link>
+    <p><router-link class="link" to="/">Reserve</router-link></p>
+    <p><router-link class="link" to="/">About Us</router-link></p>
   </div>
 </template>
 
@@ -14,14 +14,14 @@ import Logo from "@/assets/graphics/logo.png";
 
 <style scoped>
 .navBarContainer {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 15vh;
   border-radius: 0 0 50% 50%;
   background-color: var(--first);
-  box-shadow: inset 0 0 20px var(--third);
+  box-shadow: inset 0 0 20px var(--third), 0 0 20px var(--third);
   justify-content: center;
   display: flex;
   gap: 5vw;
@@ -38,6 +38,10 @@ import Logo from "@/assets/graphics/logo.png";
   background-repeat: no-repeat;
   transition: background-size 0.3s, background-position 0s 0.3s;
 }
+.link {
+  text-decoration: none;
+  color: var(--third);
+}
 .navBarContainer p:hover {
   background-position: 100% 100%;
   background-size: 100% 4px;
@@ -47,7 +51,7 @@ img {
   height: 20vh;
   padding: 10px;
   background-color: var(--second);
-  box-shadow: inset 0 0 10px var(--third);
+  box-shadow: inset 0 0 20px var(--third), 0 0 20px var(--third);
   border-radius: 0 0 10% 10%;
 }
 </style>

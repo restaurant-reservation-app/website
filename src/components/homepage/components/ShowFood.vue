@@ -17,7 +17,6 @@ import { defineProps } from "vue";
 const props = defineProps({
   title: String,
   description: String,
-  image: String,
   price: Number,
   photo: String,
   isLeft: Boolean,

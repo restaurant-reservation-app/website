@@ -61,7 +61,6 @@ import instagram from "@/assets/graphics/instagram.png";
 <style scoped>
 .footerContainer {
   display: flex;
-  margin-top: 10vh;
   height: 25vh;
   min-height: 235px;
   background-color: var(--third);

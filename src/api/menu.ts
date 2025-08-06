@@ -28,3 +28,7 @@ export const fetchDishRandom = (params: SearchParamsRandom) => {
     params,
   });
 };
+
+export const fetchCategories = () => {
+  return axios.get<string[]>("http://localhost:8080/menu/category");
+};
